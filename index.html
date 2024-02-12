@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <form method="POST">
+            <div class="form-group">
+                <div class="container text-center">
+                    <label class="text-center mb-0 font-weight-bold">Geschlecht *</label>
+                    <select class="form-control form-control-sm w-50 mx-auto mt-0" name="selectbox_gender" required="required">
+                        <option value="male">Männlich</option>
+                        <option value="female">Weiblich</option>
+                    </select>
+                </div>
+            </div>
+          
+            <div class="form-group">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <label class="text-center mb-0 font-weight-bold">Alter *</label> 
+                        <input type="text" class="form-control form-control-sm w-50 mx-auto mt-0" name="text_age" placeholder="Alter" required="required">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="text-center mb-0 font-weight-bold">Gewicht *</label>
+                        <input type="text" class="form-control form-control-sm w-50 mx-auto mt-0" name="text_weight" placeholder="Gewicht - kg" required="required">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="text-center mb-0 font-weight-bold">Größe *</label>
+                        <input type="text" class="form-control form-control-sm w-50 mx-auto mt-0" name="text_height" placeholder="Größe - cm" required="required">
+                    </div>
+                </div>
+            </div>
+          
+            <div class="form-group">
+                <div class="container text-center">
+                    <label class="text-center mb-0 font-weight-bold">Tägliche Aktivität</label>
+                    <select class="form-control form-control-sm w-50 mx-auto mt-0" name="selectbox_activity">
+                        <option value="only_sit">
+                        ausschließlich sitzend
+                        </option>
+                
+                        <option value="mainly_sit">
+                        vorwiegend sitzend
+                        </option>
+                
+                        <option value="mostly_sit">
+                        überwiegend sitzend
+                        </option>
+                
+                        <option value="mainly_stand">
+                        hauptsächlich stehend
+                        </option>
+                
+                        <option value="stressful_activity">
+                        körperlich anstrengende Arbeiten
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="container text-center">
+                    <label class="text-center mb-0 font-weight-bold">Sitzend</label>
+                    <input type="text" class="form-control form-control-sm w-50 mx-auto mt-0" name="text_sitting" placeholder="Sitzend - h">
+                    <label class="text-center mb-0 font-weight-bold">Stehend</label>
+                    <input type="text" class="form-control form-control-sm w-50 mx-auto mt-0" name="text_standing" placeholder="Stehend - h">          
+                    <label class="text-center mb-0 font-weight-bold">Büro</label>
+                    <input type="text" class="form-control form-control-sm w-50 mx-auto mt-0" name="text_office" placeholder="Büro - h">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="container text-center">
+                    <input type="submit" class="btn btn-primary" name="button_send" value="Senden">
+                    <p>
+                        <small>Felder markiert mit * sind Pflichtfelder.</small>
+                    </p>
+                </div>
+            </div>
+          </form>        
+    </body>
+</html>
+
