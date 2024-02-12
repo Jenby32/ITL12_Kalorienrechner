@@ -62,6 +62,15 @@
 
 <?php
 
+    $activityPALFac = array(
+      "only_sit"=> 1.2,
+      "mainly_sit"=> 1.45,
+      "mostly_sit"=> 1.65,
+      "mainly_stand"=> 1.85,
+      "stressful_activity"=> 2.2,
+      "sleep"=>0.95
+    );
+
 /*
 Frauen: 655,1 + (9,6 x Körpergewicht in kg) + (1,8 x Körpergröße in cm) – (4,7 x Alter in Jahren)
 Männer: 66,47 + (13,7 x Körpergewicht in kg) + (5 x Körpergröße in cm) – (6,8 x Alter in Jahren)
