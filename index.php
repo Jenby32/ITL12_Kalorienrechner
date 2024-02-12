@@ -1,4 +1,4 @@
-<form>
+<form method="POST">
   <div class="form-group">
     <label>Geschlecht *</label> <select class="form-control" name="selectbox_gender" required="required">
       <option value="male">
@@ -59,3 +59,16 @@
     <input type="submit" class="btn btn-primary" name="button_send" value="Senden">
   </div><small>Felder markiert mit * sind Pflichtfelder.</small>
 </form>
+
+<?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $gender = $_POST["selectbox_gender"];
+        $weight = $_POST["text_weight"];
+        $height = $_POST["text_height"];
+        $activity = $_POST["selectbox_activity"];
+        $sittingTime = $_POST["text_sitting"];
+        $standingTime = $_POST["text_standing"];
+
+        echo $gender. " " .$weight. " " .$height." ".$activity." ".$sittingTime." ".$standingTime."";
+    }
+?>
