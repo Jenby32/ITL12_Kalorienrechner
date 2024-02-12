@@ -41,10 +41,14 @@ Männer: 66,47 + (13,7 x Körpergewicht in kg) + (5 x Körpergröße in cm) – 
           $kalorienBedarf = 655.1 + (9.6*$weight) + (1.8*$height) - (4.7*$age);
         }
 
-        echo "Der Durchschnitt für den PAL Wert beträgt: " .getPalAvg($activityPALFac, $sittingTime, $officeTime, $standingTime) ."<br/>";
+        $outputPALStr = '<div class="container text-center">
+                          <p class="font-weight-bold">'.'Der Durchschnitt für den PAL Wert beträgt: ' .getPalAvg($activityPALFac, $sittingTime, $officeTime, $standingTime) .'<br/>'.'</p>
+                        </div>';
 
-
-        // echo $gender. " " .$weight. " " .$height." ".$activity." ".$sittingTime." ".$standingTime."";
-        echo "Der Standardkalorienbedarf für dieses Alter, diese Größe und dieses Körpergewicht beträgt: " .$kalorienBedarf. "kcal";
+        $outputCalStr = '<div class="container text-center">
+                          <p class="font-weight-bold">'.'Der Standardkalorienbedarf für dieses Alter, diese Größe und dieses Körpergewicht beträgt: ' .$kalorienBedarf. 'kcal'.'</p>
+                        </div>';
+        echo $outputPALStr;
+        echo $outputCalStr;
     }
 ?>
