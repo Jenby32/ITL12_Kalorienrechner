@@ -72,7 +72,10 @@ Männer: 66,47 + (13,7 x Körpergewicht in kg) + (5 x Körpergröße in cm) – 
         </div>';
         }
 //-------------------------------------------------------------------------------------------------------
-        echo $outputPALStr;
-        echo $outputCalStr;
+
+        if(isset($outputCalStr)) {
+          echo $outputPALStr;
+          echo $outputCalStr;
+        }
     }
 ?>
